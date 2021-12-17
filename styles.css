@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+    font-size: 15px;    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 40px 48px 40px 40px;
+    height: 440px;
+    width: 296px;
+}
+
+#card-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 16px 0 0 16px;
+}
+
+#card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 16px 16px 0;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 32px;
+}
+
+h2 + p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 32px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn {
+    margin-top: 56px;
+    padding: 12px 28px;
+    border-radius: 24px;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+}
+
+.btn {
+    transition-duration: 0.4s;
+}
+
+#card-1 .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+#card-1 .btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+#card-2 .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+#card-2 .btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+#card-3 .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+#card-3 .btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+/* || Responsive Styles
+---------------------------------------------------- */
+@media screen and (max-width: 380px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #card-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 4px 4px 0 0;
+    }
+
+    #card-2 {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+    }
+
+    #card-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 4px 4px;
+    }
+
+}
+
